@@ -18,3 +18,91 @@
 ::-webkit-scrollbar {
     display: none;
 }
+
+body, html {
+    height: 100%;
+}
+
+body {
+    background: var(--dark-blue);
+    display: grid;
+    place-items: center;
+}
+
+#quote-container {
+    max-width: 540px;
+    background: var(--dark-grey-blue);
+    padding: 40px 20px;
+    padding-bottom: 0;
+    margin: 0 16px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#quote-container::after {
+    content: url('./images/icon-dice.svg');
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background: var(--neon-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    bottom: -24px;
+}
+
+#quote-id {
+    color: var(--neon-green);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3.46px;
+    margin-bottom: 24px;
+}
+
+#quote {
+    font-size: 24px;
+    letter-spacing: -0.26px;
+    margin-bottom: 24px;
+    color: var(--light-cyan);
+}
+
+#divider-desktop {
+    display: none;
+}
+
+#divider-mobile {
+    margin-bottom: 64px;
+}
+
+@media screen and (min-width: 1440px) {
+    #quote-container {
+        padding: 48px;
+        padding-bottom: 0;
+    }
+
+    #quote-id {
+        font-size: 13px;
+        letter-spacing: 4.09px;
+        margin-bottom: 24px;
+    }
+
+    #quote {
+        font-size: 28px;
+        letter-spacing: -0.3px;
+        margin-bottom: 40px;
+    }
+
+    #divider-mobile {
+        display: none;
+    }
+
+    #divider-desktop {
+        display: block;
+        margin-bottom: 72px;
+        width: 100%;
+    }
+}
