@@ -42,8 +42,7 @@ body {
     position: relative;
 }
 
-#quote-container::after {
-    content: url('./images/icon-dice.svg');
+#dice {
     position: absolute;
     width: 64px;
     height: 64px;
@@ -51,8 +50,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    object-fit: none;
     border-radius: 50%;
     bottom: -24px;
+    cursor: pointer;
+    transition: box-shadow .2s ease;
+}
+
+#dice:hover {
+    box-shadow: 0px 0px 40px var(--neon-green);
 }
 
 #quote-id {
