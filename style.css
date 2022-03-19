@@ -1,0 +1,20 @@
+:root {
+    --dark-blue: #202733;
+    --dark-grey-blue: #313A48;
+    --grey-blue: #4F5D74;
+    --light-cyan: #CEE3E9;
+    --neon-green: #53FFAA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Manrope;
+    font-weight: 800;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
